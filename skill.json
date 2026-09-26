@@ -1,0 +1,40 @@
+{
+  "name": "genpark-personal-cognitive-load-balancer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Personal cognitive load and attention fragmentation index analyzer restructuring daily agendas into protected deep work blocks.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "personal-productivity",
+  "tags": [
+    "personal-agent",
+    "cognitive-load",
+    "deep-work",
+    "attention-index",
+    "schedule-optimization"
+  ],
+  "inputs": {
+    "user_name": {
+      "type": "string",
+      "default": "Alex Morgan"
+    },
+    "calendar_events": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "balancer_id": {
+      "type": "string"
+    },
+    "attention_fragmentation_index": {
+      "type": "number"
+    },
+    "uninterrupted_focus_available_hours": {
+      "type": "number"
+    },
+    "cognitive_health_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
